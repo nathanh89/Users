@@ -1,0 +1,20 @@
+package co.byter.user;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class ByterTests {
+
+	@Test
+	public void testUserName(){
+		String expected = "Nathan";
+		//Given a Byter user named Nathan
+		Byter user = new Byter();
+		user.setName("Nathan");
+		//When I ask the user for his name
+		String result = user.getName();
+		//Then I should get Nathan back
+		assertTrue(expected.equals(result));
+	}
+}

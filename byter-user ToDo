@@ -1,0 +1,30 @@
+----------------------------
+Feature: A Byter User can have a name
+Given: A Byter user
+When: I ask the Byter user for their name
+Then: I should get the name back
+
+Feature: A Byter User can have a password
+Given: A Byter user
+When: That user wants to login
+Then: They can, with the password
+
+Feature: A Byter user can have an email address
+Given: A Byter user
+When: I ask the Byter user for their email address
+Then: I should get the email address back
+
+Feature: A Byter user's password is encrypted
+Given: A Byter user
+When: A password is created or recalled
+Then: It will be encrypted
+
+Feature: A Byter user's password is salted
+Given: A Byter user
+When: A password is created or recalled
+Then: The password will be salted
+
+Feature: A Byter user's email is unique
+Given: An existing Byter user
+When: I try to create another Byter user using the first user's email
+Then: An exception will be thrown and the user will not be created
