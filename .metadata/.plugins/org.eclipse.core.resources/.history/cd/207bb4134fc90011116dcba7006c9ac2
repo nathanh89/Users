@@ -15,18 +15,6 @@ public class ByterTests {
 		//When I ask the user for his name
 		String result = user.getName();
 		//Then I should get Nathan back
-		assertEquals(expected, result);
-	}
-	
-	@Test
-	public void testPassword(){
-		String password = "byterpassword";
-		//Given a Byter user named Nathan
-		Byter user = new User();
-		//When Nathan wants to set a password
-		user.setPassword(password);
-		//Then the password should be set correctly
-		String result = user.getPassword();
-		assertEquals(password, result);
+		assertTrue(expected.equals(result));
 	}
 }

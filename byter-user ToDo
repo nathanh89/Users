@@ -1,9 +1,10 @@
-----------------------------
+----------------------------DONE
 Feature: A Byter User can have a name
 Given: A Byter user
 When: I ask the Byter user for their name
 Then: I should get the name back
 
+----------------------------
 Feature: A Byter User can have a password
 Given: A Byter user
 When: That user wants to login

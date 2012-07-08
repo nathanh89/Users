@@ -3,7 +3,6 @@ package co.byter.user;
 public class User implements Byter {
 
 	private String name;
-	private String password;
 	
 	@Override
 	public void setName(String name){
@@ -16,13 +15,14 @@ public class User implements Byter {
 	}
 
 	@Override
-	public void setPassword(String password) {
-		this.password = password;
+	public void setPassword() {
+		
 	}
 
 	@Override
 	public String getPassword() {
-		return password;
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 
