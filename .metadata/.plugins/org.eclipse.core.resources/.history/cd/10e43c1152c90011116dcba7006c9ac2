@@ -39,10 +39,7 @@ public class ByterTests {
 	@Test
 	public void testEmailAddress(){
 		String expected = "nathan@yahoo.com";
-		//When the user wants to set an email address
-		user.setEmail(expected);
-		//Then the email address is set correctly
-		String result = user.getEmail();
-		assertEquals(expected, result);
-		}
+		//Given a Byter user n
+	}
+
 }

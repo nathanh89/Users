@@ -4,7 +4,6 @@ public class User implements Byter {
 
 	private String name;
 	private String password;
-	private String email;
 	
 	@Override
 	public void setName(String name){
@@ -24,16 +23,6 @@ public class User implements Byter {
 	@Override
 	public String getPassword() {
 		return password;
-	}
-
-	@Override
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	@Override
-	public String getEmail() {
-		return email;
 	}
 	
 
