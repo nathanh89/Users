@@ -1,0 +1,10 @@
+package co.byter.user;
+
+public class User implements Byter {
+
+	private String name;
+	
+	public void setName(String name){
+		
+	}
+}

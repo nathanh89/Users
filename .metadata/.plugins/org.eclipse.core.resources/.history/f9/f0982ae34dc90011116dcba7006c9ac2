@@ -2,7 +2,7 @@ package co.byter.user;
 
 public interface Byter {
 
-	public void setName(String name);
+	public void setName(String);
 	
 	public String getName();
 }
