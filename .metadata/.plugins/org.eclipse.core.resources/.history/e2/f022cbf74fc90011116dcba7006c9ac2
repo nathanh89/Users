@@ -2,24 +2,16 @@ package co.byter.user;
 
 import static org.junit.Assert.*;
 
-import org.junit.Before;
 import org.junit.Test;
 
 public class ByterTests {
-	
-	private Byter user;
 
-	@Before
-	public void setup(){
-		user = new User();
-	}
-	
 	@Test
 	public void testUserName(){
 		String expected = "Nathan";
-		//Given a Byter user 
-		//And the user's name is Nathan
-		user.setName(expected);
+		//Given a Byter user named Nathan
+		Byter user = new User();
+		user.setName("Nathan");
 		//When I ask the user for his name
 		String result = user.getName();
 		//Then I should get Nathan back
@@ -30,6 +22,7 @@ public class ByterTests {
 	public void testPassword(){
 		String password = "byterpassword";
 		//Given a Byter user named Nathan
+		Byter user = new User();
 		//When Nathan wants to set a password
 		user.setPassword(password);
 		//Then the password should be set correctly
