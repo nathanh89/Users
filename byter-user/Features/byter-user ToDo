@@ -1,23 +1,3 @@
-----------------------------DONE
-Feature: A Byter User can have a name
-Given: A Byter user
-When: I ask the Byter user for their name
-Then: I should get the name back
-
-----------------------------DONE
-Feature: A Byter user can have an email address
-Given: A Byter user
-When: They want to set their email address
-Then: They can set the email address back
-
-----------------------------DONE
-Feature: A Byter user can only have a valid email address
-Given: A Byter user
-When: They want to set their email address
-And: They try to set it to an invalid email address
-Then: An exception will be thrown
-And: Email address will not be set
-
 ----------------------------STILL TO DO
 Feature: A Byter user's email is unique
 Given: An existing Byter user
