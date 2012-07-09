@@ -1,0 +1,7 @@
+package co.byter.user;
+
+public class Validator {
+	public static boolean isValid(String email){
+
+	}
+}

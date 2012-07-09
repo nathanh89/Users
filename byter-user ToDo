@@ -10,11 +10,19 @@ Given: A Byter user
 When: That user wants to have a password
 Then: They can set their password
 
-----------------------------
+----------------------------DONE
 Feature: A Byter user can have an email address
 Given: A Byter user
 When: They want to set their email address
 Then: They can set the email address back
+
+----------------------------
+Feature: A Byter user can only have a valid email address
+Given: A Byter user
+When: They want to set their email address
+And: They try to set it to an invalid email address
+Then: An exception will be thrown
+And: Email address will not be set
 
 Feature: A Byter user's password is encrypted
 Given: A Byter user

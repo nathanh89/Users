@@ -46,7 +46,7 @@ public class ByterTests {
 		assertEquals(expected, result);
 	}
 	
-	@Test(expected = InvalidEmailException.class)
+	@Test(expected = UnsupportedOperationException.class)
 	public void testValidateEmailAddress() {
 		// When the user wants to set an email address
 		// And the email address given is invalid

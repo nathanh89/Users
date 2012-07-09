@@ -28,7 +28,7 @@ public class User implements Byter {
 
 	@Override
 	public void setEmail(String email) {
-		if(Validator.emailIsValid(email))
+		if(emailIsValid(email))
 			this.email = email;
 		else
 			throw new InvalidEmailException();

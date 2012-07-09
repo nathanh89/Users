@@ -10,7 +10,7 @@ public interface Byter {
 	
 	public String getPassword();
 	
-	public void setEmail(String email) throws InvalidEmailException;
+	public void setEmail(String email);
 	
 	public String getEmail();
 }
