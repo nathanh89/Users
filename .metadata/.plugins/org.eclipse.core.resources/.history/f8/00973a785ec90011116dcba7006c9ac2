@@ -70,7 +70,7 @@ public class ByterTests {
 		datastore.add(user2);
 		//When the first user wants to set an email address
 		//And another user has already chosen that desired email
-		assertFalse(Validator.emailIsUnique(datastore, desiredEmail));
+		user.setEmail(desiredEmail);
 		//Then an InvalidEmailException will be thrown
 		//And an email address will not be set
 		assertEquals("", user.getEmail());

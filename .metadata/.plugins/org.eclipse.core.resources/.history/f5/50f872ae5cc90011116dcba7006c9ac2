@@ -62,15 +62,15 @@ public class ByterTests {
 	@Test
 	public void testUniqueEmail(){
 		//And another Byter user exists with an email
-		String desiredEmail = "nathan@yahoo.com";
 		Byter user2 = new User();
-		user2.setEmail(desiredEmail);
+		user2.setEmail("nathan@yahoo.com");
 		// And we have some datastore that holds Byters
 		List<Byter> datastore = new ArrayList<Byter>();
 		datastore.add(user2);
 		//When the first user wants to set an email address
+		user.setEmail("nathan@yahoo.com");
 		//And another user has already chosen that desired email
-		assertFalse(Validator.emailIsUnique(datastore, desiredEmail));
+		Validator.emailIsUnique();
 		//Then an InvalidEmailException will be thrown
 		//And an email address will not be set
 		assertEquals("", user.getEmail());

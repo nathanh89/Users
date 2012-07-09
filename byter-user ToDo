@@ -5,18 +5,12 @@ When: I ask the Byter user for their name
 Then: I should get the name back
 
 ----------------------------DONE
-Feature: A Byter User can have a password
-Given: A Byter user
-When: That user wants to have a password
-Then: They can set their password
-
-----------------------------DONE
 Feature: A Byter user can have an email address
 Given: A Byter user
 When: They want to set their email address
 Then: They can set the email address back
 
-----------------------------
+----------------------------DONE
 Feature: A Byter user can only have a valid email address
 Given: A Byter user
 When: They want to set their email address
@@ -24,17 +18,28 @@ And: They try to set it to an invalid email address
 Then: An exception will be thrown
 And: Email address will not be set
 
+----------------------------STILL TO DO
+Feature: A Byter user's email is unique
+Given: An existing Byter user
+When: I try to create another Byter user using the first user's email
+Then: An exception will be thrown 
+And: The email will not be set
+
+----------------------------DONE
+Feature: A Byter User can have a password
+Given: A Byter user
+When: That user wants to have a password
+Then: They can set their password
+
+----------------------------STILL TO DO
 Feature: A Byter user's password is encrypted
 Given: A Byter user
 When: A password is created or recalled
 Then: It will be encrypted
 
+----------------------------STILL TO DO
 Feature: A Byter user's password is salted
 Given: A Byter user
 When: A password is created or recalled
 Then: The password will be salted
 
-Feature: A Byter user's email is unique
-Given: An existing Byter user
-When: I try to create another Byter user using the first user's email
-Then: An exception will be thrown and the user will not be created

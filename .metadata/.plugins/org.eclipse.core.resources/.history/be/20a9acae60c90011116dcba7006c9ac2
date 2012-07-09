@@ -1,0 +1,5 @@
+package co.byter.user;
+
+public interface Observer {
+
+}

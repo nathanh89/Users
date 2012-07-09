@@ -13,7 +13,7 @@ public class Validator {
 		Matcher m = p.matcher(email);
 		return m.matches();
 	}
-	public static boolean emailIsUnique(List<Byter> datastore, String desiredEmail) {
+	public static boolean emailIsUnique(List<Byter> datastore, Byter user, String desiredEmail) {
 		for(Byter currentUser: datastore){
 			if(currentUser.getEmail().equals(desiredEmail)){
 				return false;

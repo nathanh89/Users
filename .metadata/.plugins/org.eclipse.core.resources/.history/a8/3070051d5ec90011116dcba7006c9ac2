@@ -32,7 +32,6 @@ public class User implements Byter {
 			this.email = email;
 		else
 			throw new InvalidEmailException();
-		
 	}
 
 	@Override
